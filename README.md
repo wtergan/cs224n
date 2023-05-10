@@ -25,4 +25,4 @@ All code is heavily commented and explained in detail.
 
 <br>
 
-Many thanks to mantasu for inspiration. **(https://github.com/mantasu/cs231n)**
+Many thanks to mantasu for inspiration. **(https://github.com/mantasu/cs224n)**
