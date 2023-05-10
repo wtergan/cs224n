@@ -4,8 +4,10 @@
 
 ### Overview
 Code solutions for each assignment in Stanford's cs224n course.
+
 While each assignment composed of a written portion as well, I placed heavy emphasis on solving the coding portion.
 Will attempt to complete the written portion of the assignments when time allows so.
+
 All code is heavily commented and explained in detail.
 
 ### Main sources (official)
