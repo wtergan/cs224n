@@ -19,11 +19,11 @@ All code is heavily commented and explained in detail.
 
 ### Assignments
 
-* [A1](a1): Exploring Word Vectors (_Done_)
-* [A2](a2): word2vec (_Done_)
-* [A3](a3): Dependency Parsing (_Done_)
-* [A4](a4): Neural Machine Translation with RNNs and Analyzing NMT Systems (_Done_)
-* [A5](a5): Self-Attention, Transformers, and Pretraining (_Done_)
+* [A1](a1): Exploring Word Vectors :white_check_mark:
+* [A2](a2): word2vec :white_check_mark:
+* [A3](a3): Dependency Parsing :white_check_mark:
+* [A4](a4): Neural Machine Translation with RNNs and Analyzing NMT Systems :white_check_mark:
+* [A5](a5): Self-Attention, Transformers, and Pretraining :white_check_mark:
 
 <br>
 
