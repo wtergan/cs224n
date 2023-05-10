@@ -1,4 +1,4 @@
-<h2 align="center">CS224n: Assignments (Code) </h2>
+<h2 align="center">CS224n: Assignments </h2>
 <p align="center"><b>Natural Language Processing with Deep Learning</b></p>
 <p align="center"><i>Stanford - Winter 2022</i></p>
 
