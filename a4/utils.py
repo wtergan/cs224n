@@ -50,6 +50,11 @@ def read_corpus(file_path, source, vocab_size=2500):
         is of the source language or target language
     @param vocab_size (int): number of unique subwords in
         vocabulary when reading and tokenizing
+
+    NOTE: The .encode_as_pieces() method within the SentencePieceProcessor() class is used for subword tokenization.
+          Useful for machine learning translation. Effective at allowing the model to learn relationships between words
+          that are not adjacent to each other in the text. Computationally expensive, but can be used for a variety of 
+          languages.
     """
     data = []
     sp = spm.SentencePieceProcessor()
@@ -71,9 +76,14 @@ def autograder_read_corpus(file_path, source):
     @param file_path (str): path to file containing corpus
     @param source (str): "tgt" or "src" indicating whether text
         is of the source language or target language
+
+    NOTE: The .word_tokenize() method within nltk is used for word tokenization. Advantages includes simplicity and 
+          speed compared to its subword counterpart. Not good at out-of-vocab words and limited language support, not
+          better than subward counterpoart at learning relationships between words thats not adjacent.
     """
     data = []
     for line in open(file_path):
+        # Used for word tokenization.
         sent = nltk.word_tokenize(line)
         # only append <s> and </s> to the target sentence
         if source == 'tgt':
@@ -89,9 +99,11 @@ def batch_iter(data, batch_size, shuffle=False):
     @param batch_size (int): batch size
     @param shuffle (boolean): whether to randomly shuffle the dataset
     """
+    # Returns the smallest integer that is >= a given number. Essentially, rounding to the nearsest whole number.
     batch_num = math.ceil(len(data) / batch_size)
     index_array = list(range(len(data)))
 
+    # If shuffle flag is set, shuffle the indices.
     if shuffle:
         np.random.shuffle(index_array)
 
